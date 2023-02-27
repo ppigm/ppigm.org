@@ -17,12 +17,19 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: var(--text-primary);
     font-size: 18px;
-}
+} */
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:300;
+    background-color:lightblue;
+    color:lightblue;
+  }
 
 nav {
     background-color: #ffffff;
@@ -504,36 +511,38 @@ footer a:hover {
     border-color: black;
 }
 
-.section-prize .presidentPhoto{
+.section-prize .deptPhoto{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    /* margin-bottom: 20px; */
     border-style: solid;
     border-width: thick;
-    border-color:black;
-    width: 330px;
+    border-color:rgb(0, 0, 0);
+    width: 30%;
+    height: auto;
 }
 
-/* .section-prize .container-text{
+.section-prize .container-text{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
     margin-bottom: 20px;
-    border-style: solid;
-    border-width: thick;
-    border-color:rgb(160, 23, 23);
-    width: 60%;
-} */
+    text-align: left;
+    /* border-style: solid;
+    border-width: thick; */
+    /* border-color:rgb(160, 23, 23); */
+    width: 50%;
+}
 
 .section-prize .container{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 75px;
-    margin-bottom: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-top: 75px;
+    margin-bottom: 20px; */
     background-color: lightblue;
 }
 
@@ -732,7 +741,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight:300;
   background-color:lightblue;
-  color:#FFF;
+  color:#000000;
 }
 section{
   text-align:center;
