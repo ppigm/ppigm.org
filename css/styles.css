@@ -954,6 +954,7 @@ div#editableContent .ul{
 .card-container {
     column-gap: 20px;
     column-count: 2;
+    column-width: 200px;
     column-rule: 4px dotted #cd8930;
     /* display: grid;
     grid-template-columns: 50% 20% 30%; */
@@ -962,6 +963,7 @@ div#editableContent .ul{
 .card-container-t {
     column-gap: 20px;
     column-count: 2;
+    column-width: 200px;
     text-align: center;
     /* display: grid;
     grid-template-columns: 50% 20% 30%; */
@@ -970,6 +972,7 @@ div#editableContent .ul{
 .three-card-container {
     column-gap: 20px;
     column-count: 3;
+    column-width: 200px;
     column-rule: 4px dotted #cd8930;
 }
 .card-t {
@@ -995,7 +998,7 @@ div#editableContent .ul{
     background-color: #d7a564;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
-    height: 100px;
+    height: 110px;
     margin: 0 0 1em 0;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -1009,7 +1012,7 @@ div#editableContent .ul{
   .card-light {
     break-inside: avoid;
     background-color: #dcc19d;
-    height: 100px;
+    height: 110px;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     margin: 0 0 1em 0;
