@@ -554,11 +554,11 @@ footer a:hover {
 }
 
 .icf-banner .hero-banner{
-    display: block;
+    /* display: block; */
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px;
+    padding-bottom: 70px;
 }
 
 .section-prize .item {
@@ -900,7 +900,7 @@ div#editableContent .ul{
         }
 
 .first-section {
-    padding: 50px;
+    padding-bottom: 50px;
 }
 
 .list-wrapper {
