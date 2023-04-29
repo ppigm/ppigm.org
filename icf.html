@@ -323,36 +323,36 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="first-section">
-                <p><br><span style="font-weight: 900; font-size: 30px;">The tickets will be available soon!!</strong></span>
-                    <br>Show your interest by writing your email here 
-                </p>
-                <form name="submit-to-google-sheet">
-                    <input name="email" type="email" placeholder="Email" required>
-                    <button type="submit"><img src="img/send-icon.png" width="30px"></button>
-                  </form>
-                <span style="color: #cd8930; font-size: 14px;" id="msg"></span>
-                  
-                  <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzyWxjlnhp4htjEWDd3HCs6za49_hj-kuyJyXaA3JBnX7XZPyddID6ku5IBTy2PFjGcvw/exec'
-                    const form = document.forms['submit-to-google-sheet']
-                    const msg = document.getElementById("msg")
-                  
-                    form.addEventListener('submit', e => {
-                      e.preventDefault()
-                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                        .then(response => {
-                            msg.innerHTML = "Thank you for subscribing!"
-                            setTimeout(function(){
-                                msg.innerHTML = ""
-                            },5000)
-                            form.reset()
-                        })
-                        .catch(error => console.error('Error!', error.message))
+        <div class="first-section">
+            <p><br><span style="font-weight: 900; font-size: 30px;">The tickets will be available soon!!</strong></span>
+                <br>Show your interest by writing your email here 
+            </p>
+            <form name="submit-to-google-sheet">
+                <input name="email" type="email" placeholder="Email" required>
+                <button type="submit"><img src="img/send-icon.png" width="30px"></button>
+              </form>
+            <span style="color: #cd8930; font-size: 14px;" id="msg"></span>
+              
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzyWxjlnhp4htjEWDd3HCs6za49_hj-kuyJyXaA3JBnX7XZPyddID6ku5IBTy2PFjGcvw/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Thank you for subscribing!"
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        },5000)
+                        form.reset()
                     })
-                  </script>
-            </div>
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
         </div>
 
         <div class="footer">
