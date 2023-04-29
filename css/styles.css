@@ -993,6 +993,7 @@ div#editableContent .ul{
     background-color: #d7a564;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
+    border-radius: 8px;
     margin: 0 0 1em 0;
     /* float: right; */
     /* margin-right: -80px; */
@@ -1002,6 +1003,7 @@ div#editableContent .ul{
     break-inside: avoid;
     background-color: #d7a564;
     border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
     padding: 10px;
     height: 120px;
     margin: 0 0 1em 0;
@@ -1018,6 +1020,7 @@ div#editableContent .ul{
     break-inside: avoid;
     background-color: #dcc19d;
     height: 120px;
+    border-radius: 8px;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     margin: 0 0 1em 0;
@@ -1033,6 +1036,7 @@ div#editableContent .ul{
   .highlight{
     display: inline-block;
     padding: .25em 0;
+    border-radius: 8px;
     background: #824e0a;
     color: #ffffff;
 }
