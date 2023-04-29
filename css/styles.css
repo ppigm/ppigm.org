@@ -935,6 +935,10 @@ div#editableContent .ul{
   .list-text {
       font-weight:400;
   }
+
+  .list-text span {
+    vertical-align:middle;
+  }
   .red-line {
     background:#f1a541;
     z-index:-1;
@@ -999,7 +1003,7 @@ div#editableContent .ul{
     background-color: #d7a564;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
-    height: 110px;
+    height: 120px;
     margin: 0 0 1em 0;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -1013,7 +1017,7 @@ div#editableContent .ul{
   .card-light {
     break-inside: avoid;
     background-color: #dcc19d;
-    height: 110px;
+    height: 120px;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     margin: 0 0 1em 0;
@@ -1263,4 +1267,54 @@ div#editableContent .ul{
     color: white;
     width: 35px;
     height: 35px;
+  }
+
+  .wrapper .ig-button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    color: #333;
+    float: left;
+    overflow: hidden;
+    margin: 0 5px;
+    background: #FFF;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+
+  .wrapper .ig-button:hover{
+    width: 230px;
+  }
+
+  .wrapper .ig-button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+  }
+
+  .wrapper .ig-button:hover .icon i{
+    color: #FFF;
+  }
+
+  .wrapper .ig-button:nth-child(1) .icon{
+    background: #E1306C;
+    transition: all 0.3s ease-out;
+  }
+
+  .wrapper .ig-button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+  }
+
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
   }
