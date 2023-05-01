@@ -333,7 +333,7 @@
             </p>
             <form name="submit-to-google-sheet">
                 <input name="email" type="email" placeholder="Email" required>
-                <button class="save-btn" type="submit"><img src="img/send-icon.png" width="30px"></button> 
+                <button class="save-btn" type="submit" id="save-btn"><img src="img/send-icon.png" width="30px"></button> 
               </form>
             <span style="color: #cd8930; font-size: 14px;" id="msg"></span>
               
@@ -345,23 +345,21 @@
 
                 save_btn.onclick = function() {
                     this.innerHTML = "<div class='loader' id='loader2'></div>"
-                    form.addEventListener('submit', e => {
+                }
+
+                form.addEventListener('submit', e => {
                   e.preventDefault()
                   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                     .then(response => {
                         msg.innerHTML = "Thank you for subscribing!"
-                        console.log(loader2)
-                        this.innerHTML = "<img src='img/send-icon.png' width='30px'>" 
                         setTimeout(function(){
                             msg.innerHTML = ""
                         },2000)
                         form.reset()
+                        document.getElementById("save-btn").innerHTML = "<img src='img/send-icon.png' width='30px'>" 
                     })
                     .catch(error => console.error('Error!', error.message))
                 })
-                }
-                
-                
               </script>
         </div>
 
