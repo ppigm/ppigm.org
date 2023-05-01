@@ -341,14 +341,15 @@
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbzyWxjlnhp4htjEWDd3HCs6za49_hj-kuyJyXaA3JBnX7XZPyddID6ku5IBTy2PFjGcvw/exec'
                 const form = document.forms['submit-to-google-sheet']
                 const msg = document.getElementById("msg")
-                const save_btn = document.querySelector(".save-btn")
+                // const save_btn = document.querySelector(".save-btn")
 
-                save_btn.onclick = function() {
-                    this.innerHTML = "<div class='loader' id='loader2'></div>"
-                }
+                // save_btn.onclick = function() {
+                //     this.innerHTML = "<div class='loader' id='loader2'></div>"
+                // }
 
                 form.addEventListener('submit', e => {
                   e.preventDefault()
+                  msg.innerHTML = "Loading..."
                   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                     .then(response => {
                         msg.innerHTML = "Thank you for subscribing!"
@@ -356,7 +357,7 @@
                             msg.innerHTML = ""
                         },2000)
                         form.reset()
-                        document.getElementById("save-btn").innerHTML = "<img src='img/send-icon.png' width='30px'>" 
+                        // document.getElementById("save-btn").innerHTML = "<img src='img/send-icon.png' width='30px'>" 
                     })
                     .catch(error => console.error('Error!', error.message))
                 })
