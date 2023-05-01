@@ -333,7 +333,7 @@
             </p>
             <form name="submit-to-google-sheet">
                 <input name="email" type="email" placeholder="Email" required>
-                <button type="submit"><img src="img/send-icon.png" width="30px"></button>
+                <button class="save-btn" type="submit"><img src="img/send-icon.png" width="30px"></button> 
               </form>
             <span style="color: #cd8930; font-size: 14px;" id="msg"></span>
               
@@ -341,19 +341,27 @@
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbzyWxjlnhp4htjEWDd3HCs6za49_hj-kuyJyXaA3JBnX7XZPyddID6ku5IBTy2PFjGcvw/exec'
                 const form = document.forms['submit-to-google-sheet']
                 const msg = document.getElementById("msg")
-              
-                form.addEventListener('submit', e => {
+                const save_btn = document.querySelector(".save-btn")
+
+                save_btn.onclick = function() {
+                    this.innerHTML = "<div class='loader' id='loader2'></div>"
+                    form.addEventListener('submit', e => {
                   e.preventDefault()
                   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                     .then(response => {
                         msg.innerHTML = "Thank you for subscribing!"
+                        console.log(loader2)
+                        this.innerHTML = "<img src='img/send-icon.png' width='30px'>" 
                         setTimeout(function(){
                             msg.innerHTML = ""
-                        },5000)
+                        },2000)
                         form.reset()
                     })
                     .catch(error => console.error('Error!', error.message))
                 })
+                }
+                
+                
               </script>
         </div>
 

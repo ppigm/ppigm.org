@@ -1179,6 +1179,28 @@ div#editableContent .ul{
     cursor: pointer;
   }
 
+  .loader {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    animation: an1 1s ease infinite;
+  }
+
+  .hidden{
+    display:none;
+}
+
+  @keyframes an1 {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+  }
   .carousel2-wrapper {
     height: 500px;
     position: relative;
