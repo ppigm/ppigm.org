@@ -1341,6 +1341,51 @@ div#editableContent .ul{
   .wrapper .button span{
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
     line-height: 60px;
     margin-left: 10px;
   }
+
+  /* button.ticket::before {
+    font-family: fontAwesome;
+    content: url("../img/ticket-icon.png");
+    height: 20px;
+    font-size: 20px !important;
+  } */
+
+  /* .button:hover{
+    box-shadow: 0 0 0 #fff;
+  } */
+/* 
+  .button-t{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgb(250, 125, 41), rgb(249, 102, 51));
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 2rem;
+    border-radius: 9999px;
+    box-shadow: 3px 5px 20px rgb(250, 125, 41);
+    transition-property: box-shadow;
+    transition-duration: 0.75s;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: 0.75s;
+  } */
+
+  .button .icon{
+    font-size: 40px;
+    vertical-align: middle;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* display: none; */
+}
+
+.button .btn-text {
+    font-size: 20px;
+    vertical-align: middle;
+    font-weight: bold;
+}
