@@ -1389,3 +1389,24 @@ div#editableContent .ul{
     vertical-align: middle;
     font-weight: bold;
 }
+
+.launch-time {
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    /* position: fixed;
+    bottom: 5px;
+    right: 5px; */
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size: 50px;
+    margin-bottom: -14px;
+}
