@@ -980,6 +980,14 @@ div#editableContent .ul{
     column-width: 200px;
     column-rule: 4px dotted #cd8930;
 }
+
+.two-card-container {
+    column-gap: 150px;
+    column-count: 2;
+    column-width: 200px;
+    column-rule: 4px dotted #cd8930;
+}
+
 .card-t {
     break-inside: avoid;
     background-color: #d7a564;
