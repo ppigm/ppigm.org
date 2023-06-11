@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-167375737-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-167375737-1");
+        </script>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+            name="description"
+            content="PPIGM is a student association comprised of Indonesian students 
+            studying in Manchester. We hold gatherings and social events that help strengthen the bond between Indonesian students."
+        />
+        <meta
+            property="og:title"
+            content="PPIGM | Indonesian Student Association in Manchester"
+        />
+        <meta
+            property="og:description"
+            content="PPIGM is a student association comprised of Indonesian students 
+            studying in Manchester. We hold gatherings and social events that help strengthen the bond between Indonesian students."
+        />
+        <meta
+            property="og:image"
+            content=""
+        />
+        <meta property="og:url" content="https://garudahacks.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/ppigmlogo.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./img/favicon/site.webmanifest" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+        <script
+            src="https://kit.fontawesome.com/b2247133c9.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CReadex+Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CCormorant+Garamond%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CCormorant+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.0.2" media="all">
+
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <title>PPIGM | Indonesian Student Association in Manchester</title>
+
+        <link rel="alternate" hreflang="en" href="https://garudahacks.com" />
+        <link rel="alternate" hreflang="id" href="https://id.garudahacks.com" />
+        <script
+            type="text/javascript"
+            src="https://cdn.weglot.com/weglot.min.js"
+        ></script>
+        <script>
+            Weglot.initialize({
+                api_key: "wg_eb8051f11a504cc4d97f0c8c513b885a2",
+                hide_switcher: true,
+            });
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod
+                        ? n.callMethod.apply(n, arguments)
+                        : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(
+                window,
+                document,
+                "script",
+                "https://connect.facebook.net/en_US/fbevents.js"
+            );
+            fbq("init", "582480949358417");
+            fbq("track", "PageView");
+        </script>
+        <noscript
+            ><img
+                height="1"
+                width="1"
+                style="display: none;"
+                src="https://www.facebook.com/tr?id=582480949358417&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+
+    <body id="icf">
+         <a
+            id="mlh-trust-badge"
+            style="
+                display: block;
+                max-width: 100px;
+                min-width: 60px;
+                position: fixed;
+                left: 45px;
+                top: 0;
+                width: 10%;
+                z-index: 10000;
+            "
+            ><img
+                src="./img/ppigmlogo.png"
+                alt="PPI Symbol"
+                style="width: 60%;"
+        /></a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ppigm.org">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ppigm.org#ourteam">About Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link">Members</a>
+                        <ul class="dropdown">
+                            <li><a href="teams.html#internalaffairs">Internal Affairs</a></li>
+                            <li><a href="teams.html#externalaffairs">External Affairs</a></li>
+                            <li><a href="teams.html#icf">ICF</a></li>
+                            <li><a href="teams.html#sports">Sports</a></li>
+                            <li><a href="teams.html#ict">IT & Technology</a></li>
+                            <li><a href="teams.html#sponsorship">Sponsorship & Funding</a></li>
+                            <li><a href="teams.html#personaldevelopment">Personal Development</a></li>
+                            <li><a href="teams.html#socialmedia">Social Media & Creative Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.ppigm.org/">Blog</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ppigm.org/icf">ICF</a>
+                    </li>    
+                </ul>
+            </div>
+        </nav>
+
+        <section class="icf-banner" id="internalaffairs">
+            <img
+                src="./img/ICF2023-2.jpg"
+                class="hero-banner"
+            />
+        </section>
+        <div class="container">
+            <h1 class="text-header">
+                Indonesian Cultural Festival 2023
+            </h1>
+            <h5>A collaboration event between Perhimpunan Pelajar Indonesia Greater Manchester (PPI-GM) and Perhimpunan Pelajar Indonesia Sheffield (PPI Sheffield), 
+                aiming to appreciate and promote Indonesian culture and tourism</h5>
+            <div class="first-section">
+                <p>As the most anticipated cultural event in Midland regions, our event will be held in two separate area:</p>
+                <div class="list-wrapper">
+
+                    <div class="red-line"></div>
+                
+                    <div class="list-item-wrapper">
+                        <div class="list-bullet">1</div>
+                        <div class="list-item">
+                            <div class="list-title">ACTIVITIES AREA</div>
+                            <div class="list-text">Lapak Nusantara (Indonesian Themed Pop-Up Market)</div>
+                            <div class="list-text">Indonesian Culinary Bazaar</div>
+                            <div class="list-text">Indonesian Culture Exhibition</div>
+                            <!-- <div class="list-text">Music Performance</div> -->
+                        </div>
+                    </div>
+                
+                    <div class="list-item-wrapper">
+                        <div class="list-bullet">2</div>
+                        <div class="list-item">
+                            <div class="list-title">STAGE AREA</div>
+                            <div class="list-text">A musical performance that will be joined by a special guest star, Diskoria, 
+                                the dynamic Indonesian DJ duo, to bring nostalgic Indonesian songs to the dance floor.</div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <img src="img/diskoria.jpg" width="100%">
+                                </div>
+
+                                <div class="card">
+                                    <p>
+                                        <span style="font-size: 40px;">Diskoria</span>
+                                        <span style="font-size: 16px;">is known for their eclectic mixes with their unique twist, they will be bringing a fresh 
+                                            new sound to some of Indonesia's most beloved classic hits. Get ready to sing along and dance to hits like "C.H.R.I.S.Y.E," 
+                                            "Serenata Jiwa Lara," and "Badai T’lah Berlalu" like never before.</span>
+                                      </p>
+                                  </div>
+                            </div>
+                            <div class="list-text">
+                                <p> </p>
+                                In addition to Diskoria's performance, the event will feature talented students, 
+                                who will showcase Indonesian traditional dance. You can expect an unforgettable evening of entertainment!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel2-wrapper">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                <span id="item-4"></span>
+                <div class="carousel-item2 item-1">
+                    <a href="#item-4" class="arrow-prev2 arrow2"></a>
+                    <a href="#item-2" class="arrow-next2 arrow2"></a>
+                </div>
+                <div class="carousel-item2 item-2">
+                    <a href="#item-1" class="arrow-prev2 arrow2"></a>
+                    <a href="#item-3" class="arrow-next2 arrow2"></a>
+                </div>
+                <div class="carousel-item2 item-3">
+                    <a href="#item-2" class="arrow-prev2 arrow2"></a>
+                    <a href="#item-4" class="arrow-next2 arrow2"></a>
+                </div>
+                <div class="carousel-item2 item-4">
+                    <a href="#item-3" class="arrow-prev2 arrow2"></a>
+                    <a href="#item-1" class="arrow-next2 arrow2"></a>
+                </div>
+            </div>
+
+            <div class="first-section">
+                <h3>When and where</h3>
+                <div class="two-card-container">
+                    <!-- <div class="card-light">
+                        <p>
+                            <span style="font-size: 30px;">Day Event</span>
+                          </p>
+                          <p>
+                            <span style="font-size: 16px;">12.00 - 15.00</span>
+                          </p>
+                    </div> -->
+                    <div class="card-dark">
+                        <p>
+                            <span style="font-size: 30px;">Sunday</span>
+                        </p>
+                        <p>
+                            <span style="font-size: 25px;">11th June 2023</span>
+                        </p>
+                    </div>
+                    <div class="card-light">
+                        <p>
+                            <span style="font-size: 30px;">Time:</span>
+                          </p>
+                          <p>                            <span style="font-size: 25px;">18.00 - 21.00</span></p>
+                            <div><span class="highlight" style="text-align: center; transform: translateX(85%) translateY(-75%) rotate(-20deg); padding: 15px;">(Open Gate: 17.30)</span></div>
+                      </div>
+                </div>
+                <div class="location">
+                    <img src="img/location-icon.png" width="70px">
+                    <p><br><span style="font-weight: 900;">Academy 3 & Theatre, Student Union 2nd Floor</span>
+                        <br>The University of Manchester M13 9PR
+                    </p>
+                    <a href="https://goo.gl/maps/B6rcJqCS555sQL3J9"><button class="button">Open Google Maps</button></a>
+                </div>
+            </div>
+
+            <div class="first-section" style="padding-bottom: 0;">
+                <h3>Ticket Price</h3>
+                <div class="card-container">                
+                    <div class="card-light">
+                            <div class="list-title">ACTIVITIES AREA</div>
+                            <div class="list-text">
+                                <span style="font-size: 10px; color: #dcc19d;">abc</span></div>
+                            <div class="list-text"><span style="font-size: 45px; transform: translateY(300%);">£1</span></div>
+                            <div class="list-text">
+                                <span style="font-size: 10px; color: #dcc19d;">abc</span></div>
+                    </div>
+                    <div class="card-dark">
+                            <div class="list-title">STAGE AREA</div>
+                            <div class="list-text">
+                                <span style="font-size: 10px;">Normal Price Ticket</span></div>
+                            <div class="list-text">
+                                <span style="font-size: 45px;">£20</span></div>
+                            <div class="list-text">
+                                <span style="font-size: 10px;">Including the Activities Area ticket</span></div>
+                    </div>
+                    
+                </div>
+                <div class="location">
+                    <h4 style="padding-top: 40px;">ICF is coming soon</h4>
+                    <div class="launch-time" style="text-align: center; align-items: center; display: flex;" >
+                        <div>
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+                        <div>
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+                        </div>
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+                        </div>
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+
+                    <script>
+                        var countDownDate = new Date("Jun 11, 2023 17:30:00").getTime()
+                        var x = setInterval(function(){
+                            var now = new Date().getTime();
+                            var distance = countDownDate - now;
+
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+                            var minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+                            var seconds = Math.floor((distance % (1000*60))/1000);
+
+                            document.getElementById("days").innerHTML = days;
+                            document.getElementById("hours").innerHTML = hours;
+                            document.getElementById("minutes").innerHTML = minutes;
+                            document.getElementById("seconds").innerHTML = seconds;
+                        },1000);
+                    </script>
+                    <a href="https://manchesterstudentsunion.com/events/id/4725-indonesian-cultural-festival"><button class="button" style="background-color: #eba92f;">
+                        <i class="fa-solid fa-ticket icon" style="transform: rotate(150deg);"></i>
+                        <span class="btn-text">BUY YOUR TICKETS HERE</span>
+                    </button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="first-section">
+            <p><br><span style="font-weight: 900; font-size: 30px;">The tickets will be available soon!!</strong></span>
+                <br>Join our mail list and be the first to hear about our offers 
+            </p>
+            <form name="submit-to-google-sheet">
+                <input name="email" type="email" placeholder="Email" required>
+                <button class="save-btn" type="submit" id="save-btn"><img src="img/send-icon.png" width="30px"></button> 
+              </form>
+            <span style="color: #cd8930; font-size: 14px;" id="msg"></span>
+              
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzyWxjlnhp4htjEWDd3HCs6za49_hj-kuyJyXaA3JBnX7XZPyddID6ku5IBTy2PFjGcvw/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+                // const save_btn = document.querySelector(".save-btn")
+
+                // save_btn.onclick = function() {
+                //     this.innerHTML = "<div class='loader' id='loader2'></div>"
+                // }
+
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  msg.innerHTML = "Loading..."
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Thank you for subscribing!"
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        },2000)
+                        form.reset()
+                        // document.getElementById("save-btn").innerHTML = "<img src='img/send-icon.png' width='30px'>" 
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+        </div> -->
+
+        <!-- <div class="footer">
+            <div id="button"></div>
+                <div id="container" style="background-color: #dcc19d;">
+                <div id="cont">
+                <div class="footer_center-icf">
+                    <h3 style="font-family: 'Raleway'; color: white;">Follow for The Latest Updates!</h3>
+                    <p style="color: white;"><a href="https://www.instagram.com/icf_manchester/" class="fa fa-instagram"></a> @icf_manchester</p>
+
+                </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="first-section">
+            <p><br><span style="font-weight: 900; font-size: 25px;">Follow for the latest updates 
+            </p>
+            <div class="wrapper">
+                <a class="ig-button" href="https://www.instagram.com/icf_manchester/" target="_blank" style="color: black; text-decoration: none;">
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <span>@icf_manchester </span>
+                </div>
+            </a>
+        </div>
+            
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+    <footer>
+        <h3 style="font-family: 'Raleway'; color: white;">Follow for The Latest Updates!</h3>
+                    <p style="color: white;"><a href="https://www.instagram.com/icf_manchester/" class="fa fa-instagram"></a> @icf_manchester</p>
+    </footer>
+</html>
